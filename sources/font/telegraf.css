@@ -1,0 +1,15 @@
+@font-face {
+  font-family: telegraf;
+  font-weight: 500;
+  src: url('PPTelegraf-Regular.otf') format('opentype');
+}
+@font-face {
+  font-family: telegraf;
+  font-weight: 700;
+  src: url('PPTelegraf-UltraBold.otf') format('opentype');
+}
+@font-face {
+  font-family: telegraf;
+  font-weight: 300;
+  src: url('PPTelegraf-UltraLight.otf') format('opentype');
+}

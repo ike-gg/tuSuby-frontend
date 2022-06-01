@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="tuSuby to strona na której kupisz subskrypcje na dowolnym kanale twitch.tv w przystępniejszych cenach!"
+    />
+    <meta property="og:title" content="tuSuby" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:description"
+      content="tuSuby to tansze suby na twitchu"
+    />
+    <meta name="theme-color" content="#FFFFFF" />
+    <meta
+      name="keywords"
+      content="twitch tv tanie suby pl tu suby tusuby tanio"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="theme-color"
+      content="#000000"
+      media="(prefers-color-scheme: light)"
+    />
+    <meta
+      name="theme-color"
+      content="#000000"
+      media="(prefers-color-scheme: dark)"
+    />
+    <link href="../style.css" rel="stylesheet" />
+    <script src="../sources/marquee.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="../circleLogo.png" />
+    <title>tuSuby</title>
+  </head>
+  <body>
+    <div class="mobileMenu">
+      <nav>
+        <button class="mobileMenuButton" id="closeMobileMenu">Close</button>
+        <a
+          href="../"
+          style="
+            padding-bottom: 10px;
+            display: inline-block;
+            transform: translateY(5px);
+          "
+        >
+          <div class="logoNav" style="display: flex; align-items: center">
+            <img src="../circleLogo.png" alt="logo" />
+            tuSuby
+          </div>
+        </a>
+      </nav>
+      <ul>
+        <li><a href="../kupsuba/">Kup subskrypcje</a></li>
+        <li><a href="../partner/">Program partnerski</a></li>
+        <li><a href="../kontakt/">Kontakt</a></li>
+        <li><a href="../discord/">Discord bot i serwer</a></li>
+      </ul>
+    </div>
+    <div class="container">
+      <nav>
+        <button class="mobileMenuButton" id="openMobileMenu">Menu</button>
+        <a
+          href="../"
+          style="
+            padding-bottom: 10px;
+            display: inline-block;
+            transform: translateY(5px);
+          "
+        >
+          <div class="logoNav" style="display: flex; align-items: center">
+            <img src="../circleLogo.png" alt="logo" />
+            tuSuby
+          </div>
+        </a>
+        <ul>
+          <li><a href="../kupsuba/">Kup subskrypcje</a></li>
+          <li><a href="../partner/">Program partnerski</a></li>
+          <li><a href="../kontakt/">Kontakt</a></li>
+          <li><a href="../discord/">Discord bot i serwer</a></li>
+        </ul>
+      </nav>
+      <div class="hero">
+        <div class="hero-text">
+          <h1>
+            <div id="onScrollTitle1">Program partnerski</div>
+            <div id="onScrollTitle2">
+              nie jest jeszcze <span class="accent">gotowy</span>..
+            </div>
+          </h1>
+        </div>
+        <div class="hero-image onScroll">
+          <img src="future.png" alt="hero" />
+        </div>
+      </div>
+      <div class="marquee" id="marqueeCopyright">
+        TUSUBY.PL © 2022 | TUSUBY.PL © 2022 | TUSUBY.PL © 2022 | TUSUBY.PL ©
+        2022 | TUSUBY.PL © 2022 | TUSUBY.PL © 2022 | TUSUBY.PL © 2022 |
+        TUSUBY.PL © 2022 | TUSUBY.PL © 2022 | TUSUBY.PL © 2022 | TUSUBY.PL ©
+        2022 | TUSUBY.PL © 2022 | TUSUBY.PL © 2022 | TUSUBY.PL © 2022 |
+        TUSUBY.PL © 2022 | TUSUBY.PL © 2022 | TUSUBY.PL © 2022 | TUSUBY.PL ©
+        2022 | TUSUBY.PL © 2022 | TUSUBY.PL © 2022 |
+      </div>
+    </div>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+      ScrollReveal().reveal(".onScroll", {
+        delay: 100,
+        distance: "100px",
+        duration: 600,
+        easing: "cubic-bezier(0.5, 0, 0, 1)",
+        origin: "top",
+        desktop: true,
+        mobile: true,
+        reset: false,
+      });
+      for (let x = 1; x <= 4; x++) {
+        ScrollReveal().reveal(`#onScrollTitle${x}`, {
+          delay: 300 + 100 * x,
+          distance: "20px",
+          duration: 500,
+          easing: "cubic-bezier(0.5, 0, 0, 1)",
+          origin: "top",
+          desktop: true,
+          mobile: true,
+          reset: false,
+        });
+      }
+      let mobileMenuAnimationDuration = 400;
+      let mobileMenuElement = document.querySelector(".mobileMenu");
+      document
+        .querySelector("#openMobileMenu")
+        .addEventListener("click", () => {
+          mobileMenuElement.style.display = "block";
+          mobileMenuElement.animate(
+            [
+              { opacity: "0", transform: "scale(105%)" },
+              { opacity: "1", transform: "scale(100%)" },
+            ],
+            {
+              easing: "cubic-bezier(.4,0,.55,.99)",
+              duration: mobileMenuAnimationDuration,
+              fill: "both",
+            }
+          );
+        });
+      document
+        .querySelector("#closeMobileMenu")
+        .addEventListener("click", () => {
+          mobileMenuElement.animate(
+            [
+              { opacity: "1", transform: "scale(100%)" },
+              { opacity: "0", transform: "scale(105%)" },
+            ],
+            {
+              easing: "cubic-bezier(.4,0,.55,.99)",
+              duration: mobileMenuAnimationDuration,
+              fill: "both",
+            }
+          );
+          setTimeout(() => {
+            mobileMenuElement.style.display = "none";
+          }, mobileMenuAnimationDuration);
+        });
+
+      new Marquee("marqueeCopyright", {
+        speed: 0.7,
+        direction: "rtl",
+      });
+    </script>
+  </body>
+</html>
