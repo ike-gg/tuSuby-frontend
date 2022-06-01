@@ -1,12 +1,13 @@
 @import "sources/font/telegraf.css";
 
 body {
-  background-color: #FFFFFF !important;
+  background-color: #ffffff !important;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-button, .likeButton {
+button,
+.likeButton {
   text-decoration: none;
   background: black;
   color: white;
@@ -19,7 +20,8 @@ button, .likeButton {
   transition: 0.2s;
   letter-spacing: 1.2px;
 }
-button:hover, .likeButton:hover {
+button:hover,
+.likeButton:hover {
   background: rgb(63, 63, 63);
   transform: translateY(-2px);
   box-shadow: 0 1px 10px rgba(0, 0, 0, 0.648);
@@ -49,7 +51,7 @@ button:hover, .likeButton:hover {
   color: rgb(0, 0, 0);
 }
 .bigA::after {
-  content: '➜';
+  content: "➜";
   opacity: 0;
   transition: 0.3s;
 }
@@ -71,14 +73,19 @@ button:hover, .likeButton:hover {
   opacity: 1;
 }
 .accent {
-  color: #9146FF;
+  color: #9146ff;
   font-weight: 700;
 }
 * {
-  font-family: telegraf, 'Space Grotesk', Helvetica, sans-serif;
+  font-family: telegraf, "Space Grotesk", Helvetica, sans-serif;
 }
-h1,h2,h3,h4,h5,h6 {
-  font-family: 'Space Grotesk', Helvetica, sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Space Grotesk", Helvetica, sans-serif;
 }
 .container {
   max-width: 90vw;
@@ -96,7 +103,7 @@ nav {
   height: 100px;
   padding: 0 30px;
   backdrop-filter: blur(3px);
-  background-color: rgba(255, 255, 255, 0.653); 
+  background-color: rgba(255, 255, 255, 0.653);
 }
 nav li {
   display: inline-block;
@@ -130,7 +137,7 @@ nav a:hover {
   margin-top: 20px;
   text-decoration: none;
   color: white;
-  font-family: 'Space Grotesk', Helvetica, sans-serif;
+  font-family: "Space Grotesk", Helvetica, sans-serif;
   font-size: 3rem;
   transition: 0.3s;
 }
@@ -184,40 +191,41 @@ nav a:hover {
 }
 .grid-v-2-70-30 {
   display: grid;
-  grid-template-columns: 70% 30%;  
+  grid-template-columns: 70% 30%;
 }
 .blackCard {
-  background-color: #0d0d0d;
+  background-color: white;
   color: rgb(247, 247, 247);
+  border: 1px solid rgb(231, 231, 231);
   padding: 40px;
-  border-radius: 25px;
   transition: 0.3s;
 }
 .blackCard:hover {
   transform: translateY(-5px);
-  box-shadow: 0 2px 30px 2px rgb(77, 77, 77)
+  box-shadow: 0 2px 30px 2px rgba(77, 77, 77, 0.107);
 }
 .blackCard h1 {
   font-size: 2.2rem;
   margin: 0;
+  color: rgb(24, 24, 24);
 }
 .blackCard h1::before {
-  content: '➜';
+  content: "-";
   margin-right: 15px;
-  color: rgba(255, 255, 255, 0.158);
+  color: rgb(14, 14, 14);
 }
 .blackCard p {
   font-size: 1.25rem;
   line-height: 1.9rem;
-  color: rgb(232, 232, 232);
+  color: rgb(149, 149, 149);
 }
 .blackCard hr {
   margin: 40px 0;
-  border: 6px solid rgba(36, 36, 36, 0.721);
+  border: 6px solid rgba(246, 246, 246, 0.721);
   border-radius: 10px;
 }
 .blackCard .reference {
-  color: rgb(90, 90, 90);
+  color: rgb(215, 215, 215);
   font-size: 0.9rem;
   line-height: 1.2rem;
 }
@@ -231,7 +239,7 @@ nav a:hover {
   font-size: 1.2rem;
 }
 .blackCard code::before {
-  content: '> ';
+  content: "> ";
   font-weight: 900;
 }
 .blackCard li {
@@ -295,15 +303,15 @@ nav a:hover {
 }
 .helpCard p::before {
   display: inline-block;
-  content: '└';
+  content: "└";
   margin-right: 10px;
   transform: translateY(3px);
 }
 .helpCard a {
-  color: #9146FF;
+  color: #9146ff;
   font-weight: 600;
   text-decoration: none;
-  border-bottom: 1px solid #9146FF;
+  border-bottom: 1px solid #9146ff;
   padding-bottom: 2px;
   transition: 0.15s;
 }
@@ -355,7 +363,7 @@ nav a:hover {
     display: none;
   }
   .grid-v-2-70-30 {
-    grid-template-columns: 1fr;  
+    grid-template-columns: 1fr;
   }
   #buySubDirect {
     font-size: 2.2rem;
