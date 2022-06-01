@@ -1,6 +1,6 @@
 # tuSuby (Frontend)
 
-## 👉 [Check demo](https://ike-gg.github.io/tuSubyFront/)
+## 👉 [Check demo](https://ike-gg.github.io/tuSuby-front/)
 
 A website project that offered cheaper subs on twitch.
 This project handles 📄 the website, 💳 payments and discord 🤖 bot & 👥 server.
